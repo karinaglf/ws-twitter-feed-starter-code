@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Twitter Feed</title>
+	</head>
+	<body>
+		<header>
+			<div class="fixed">
+				<div class="logo-container">
+					<img src="./assets/twitter-logo.svg" alt="logo twitter" class="logo" />
+				</div>
+
+				<nav class="main-nav">
+					<ul class="nav-list"></ul>
+					<!-- Nav List created with JS -->
+					<button class="btn-blue-lg">Tweet</button>
+				</nav>
+			</div>
+		</header>
+		<main class="main-container">
+			<div class="fixed home-row">
+				<h1>Home</h1>
+				<img src="./assets/icon-top-tweets.svg" alt="top tweets icon" />
+			</div>
+			<div class="main-content">
+				<section class="add-tweet tweet-row">
+					<img src="./assets/icon-profile.svg" alt="user avatar" class="avatar" />
+					<div>
+						<input type="text" placeholder="What's happening" id="tweet-input" value="" />
+						<div class="icons-row">
+							<img src="./assets/icon-image.svg" alt="image icon" />
+							<img src="./assets/icon-gif.svg" alt="gif icon" />
+							<img src="./assets/icon-graph.svg" alt="graph icon" />
+							<img src="./assets/icon-emoji.svg" alt="emoji icon" />
+							<img src="./assets/icon-schedule.svg" alt="schedule icon" />
+							<img src="./assets/icon-location.svg" alt="pin icon" />
+							<button class="btn-blue-sm" id="tweet-btn">Tweet</button>
+						</div>
+					</div>
+				</section>
+				<section class="tweets-container">
+					<!-- Tweets feed created with JS -->
+				</section>
+			</div>
+		</main>
+		<aside>
+			<div class="fixed">
+				<section class="search-bar">
+					<input type="text" value="" placeholder="Search Twitter" />
+					<img src="./assets/icon-search.svg" alt="search icon" />
+				</section>
+			</div>
+			<section class="trends-container">
+				<header>
+					<h2>Trends for you</h2>
+					<img src=".//assets/icon-settings.svg" alt="settings icon" class="blue-icon" />
+				</header>
+				<main>
+					<!-- Trending Topics List created with JS -->
+				</main>
+				<footer>Show More</footer>
+			</section>
+
+			<section class="follow-container">
+				<header>
+					<h2>Who to follow</h2>
+				</header>
+				<main>
+					<!-- Follow Suggestions List created with JS -->
+				</main>
+				<footer>Show More</footer>
+			</section>
+		</aside>
+
+		<script src="tweets.js"></script>
+		<script src="trends.js"></script>
+		<script src="data.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
